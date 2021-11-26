@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            background-color: aqua;
+        }
+
+        h1{
+            padding: 5rem;
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+    <h1>Open Developer tools then check Consol to see the required output.</h1>
+    
+    <script>
+        
+
+function Person(fname, lname, oAdd)
+{
+    this.firstName = fname;
+    this.lastName = lname;
+    this.Office_Address = oAdd;
+}
+
+const personOne = new Person('siva', 'Kumar', 'Google, USA');
+const personTwo = new Person('rohit', 'Kumar','Amazon, Banglore');
+const personThree = new Person('mahesh','Patel','Paytm, Nodia');
+
+console.log("PERSON ONE : " + personOne.firstName+" "+personOne.lastName+" "+personOne.Office_Address);
+console.log("PERSON TWO : " + personTwo.firstName+" "+personTwo.lastName+" "+personTwo.Office_Address);
+console.log("PERSON THREE : " + personThree.firstName+" "+personThree.lastName+" "+personThree.Office_Address);
+    </script>
+</body>
+</html>
